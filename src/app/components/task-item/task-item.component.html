@@ -1,0 +1,11 @@
+<div class="task">
+  <h3>
+    {{ task.text }}
+    <fa-icon
+      [icon]="trashIcon"
+      [style]="{ color: 'red' }"
+      (click)="onClick()"
+    ></fa-icon>
+  </h3>
+  <p>{{ task.day }}</p>
+</div>
