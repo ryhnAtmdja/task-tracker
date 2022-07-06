@@ -10,6 +10,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 export class TaskItemComponent implements OnInit {
   @Input() 'task': Tasks;
   @Output() onDeleteTask: EventEmitter<Tasks> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<Tasks> = new EventEmitter();
   trashIcon = faTrash;
 
   constructor() {}
@@ -18,5 +19,9 @@ export class TaskItemComponent implements OnInit {
 
   onDelete(task: any) {
     this.onDeleteTask.emit(task);
+  }
+
+  onToggle(task: any) {
+    this.onToggleReminder.emit(task);
   }
 }

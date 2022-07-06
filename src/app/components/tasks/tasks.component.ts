@@ -12,6 +12,8 @@ export class TasksComponent implements OnInit {
 
   constructor(private taskService: TasksService) {}
 
+  // subscribe => bisa disebut .then dalam es6 js
+
   ngOnInit(): void {
     this.taskService.getTask().subscribe((tasks) => {
       this.tasks = tasks;
@@ -22,5 +24,10 @@ export class TasksComponent implements OnInit {
     this.taskService.deleteTask(task).subscribe(() => {
       this.tasks = this.tasks.filter((i) => i.id !== task.id);
     });
+  }
+
+  toggleReminder(task: Tasks) {
+    task.reminder = !task.reminder;
+    this.taskService.toggleTaskReminder(task).subscribe();
   }
 }
