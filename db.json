@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Coding Interview",
       "day": "May 7th at 1:30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "id": 5,
       "text": "F1 Race at Ohio",
       "day": "May 6th at 1:30pm",
-      "reminder": true
+      "reminder": false
     }
   ]
 }
