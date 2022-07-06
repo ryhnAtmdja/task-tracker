@@ -29,6 +29,12 @@
       "text": "F1 Race at Ohio",
       "day": "May 6th at 1:30pm",
       "reminder": false
+    },
+    {
+      "text": "School Graduation",
+      "day": "18 October ",
+      "reminder": true,
+      "id": 6
     }
   ]
 }

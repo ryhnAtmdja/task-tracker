@@ -1,22 +1,38 @@
-<form action="">
+<form action="" (ngSubmit)="onSubmit()">
   <div class="form-control">
     <label for="task">Task</label>
-    <input type="text" id="task" name="task" placeholder="Add Task" />
-    <label for="day-time">Day & Time</label>
     <input
       type="text"
-      id="day-time"
-      name="day-time"
-      placeholder="Add Day & Time"
-    />
-    <label for="reminder">Reminder</label>
-    <input type="checkbox" id="reminder" name="reminder" />
-    <input
-      type="submit"
-      id="save"
-      name="save"
-      placeholder="Save Task"
-      class="btn btn-block"
+      id="task"
+      name="task"
+      placeholder="Add Task"
+      [(ngModel)]="text"
     />
   </div>
+  <div class="form-control">
+    <label for="day">Day & Time</label>
+    <input
+      type="text"
+      id="day"
+      name="day"
+      placeholder="Add Day & Time"
+      [(ngModel)]="day"
+    />
+  </div>
+  <div class="form-control">
+    <label for="reminder">Reminder</label>
+    <input
+      type="checkbox"
+      id="reminder"
+      name="reminder"
+      [(ngModel)]="reminder"
+    />
+  </div>
+  <input
+    type="submit"
+    id="save"
+    name="save"
+    placeholder="Save Task"
+    class="btn btn-block"
+  />
 </form>
