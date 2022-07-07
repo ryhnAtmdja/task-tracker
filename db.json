@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Coding Interview",
-      "day": "May 7th at 1:30pm",
-      "reminder": false
-    },
-    {
       "id": 2,
       "text": "Coding Interview",
       "day": "May 7th at 1:30pm",
