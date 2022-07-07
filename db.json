@@ -35,6 +35,11 @@
       "day": "18 October ",
       "reminder": true,
       "id": 6
+    },
+    {
+      "text": "Test",
+      "day": "test",
+      "id": 7
     }
   ]
 }
